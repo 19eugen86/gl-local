@@ -1,0 +1,14 @@
+Name;Description
+%idfa%;iOS IDFA
+%adv_id%;Google Advertising ID
+%guid%;Click ID
+%carrier%;Carrier name
+%device%;Phone model
+%manufacturer%;Device manufacturer name
+%campaignid%;Campaign ID
+%creativeid%;Creative ID
+%ip%;IP Address
+%country%;Country Code
+%dapp%;App ID
+%framework%;Device OS Version
+%pubid%;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher

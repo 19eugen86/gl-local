@@ -1,0 +1,15 @@
+Name;Description
+{idfa};iOS IDFA
+{idfv};iOS IDFV
+{gaid};Google Advertising ID
+{hdidfv};HDIDFV
+{phid};PHID - Windows Phone 8 identifier
+{waid};Windows advertising ID - for Windows 8 desktop
+{sub_publisher};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{creativeID};Creative ID
+{device_IP};IP Address
+{campaign_id};Campaign ID
+{gift_type};Gift type
+{gift_amount};Gift amount
+{platform_os};Device OS - ios, android, win (Windows 8 - desktop), winp (Windows Phone 8)
+{target_PID};Product ID

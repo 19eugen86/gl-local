@@ -1,0 +1,7 @@
+Name;Description
+$!{IFA};Google Advertising ID / iOS IDFA
+$!{APP_ID};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+$!{TURN_UUID};Turn internal click ID
+$!{DEVICE_SHA1};Device
+$!{PLATFORM_SHA1};Platform
+$!{MAC_SHA1};MAC address

@@ -1,0 +1,6 @@
+Name;Description
+{idfa_md5};iOS IDFA (MD5 encrypted)
+{ip};IP Address
+{country_code};Country Code (for instance, 0086 for China)
+{sub_publisher};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{callback_param};Callback parameter

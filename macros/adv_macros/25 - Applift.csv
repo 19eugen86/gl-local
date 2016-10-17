@@ -1,0 +1,7 @@
+Name;Description
+{affiliate_id};The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{country_code};Country Code
+{ios_ifa};iOS IDFA
+{unid};Google Advertising ID
+{IP};IP address
+{transaction_id};Unique click ID from Applift

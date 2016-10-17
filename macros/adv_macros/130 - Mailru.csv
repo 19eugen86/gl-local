@@ -1,0 +1,10 @@
+Name;Description
+{sha1_idfa};The iOS Advertiser ID hashed (Preferable)
+{idfa};The iOS Advertiser
+{sha1_gaid};The Android Advertiser ID hashed (Preferable)
+{gaid};The Android Advertiser ID
+{clickid};internal click ID to be passed at post back
+{{campaign_id}};Campaign ID
+{{banner_id}};Banner ID
+{{gender}};Gender
+{{age}};Age

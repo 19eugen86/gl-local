@@ -1,0 +1,6 @@
+Name;Description
+{transaction_id};Unique click ID from Unilead (previously this macro was {click_id})
+{offer_id};Unique ID for each campaign
+{affiliate_id};Sub publisher
+{ios_ifa};iOS IDFA
+{google_aid};Google advertiser ID

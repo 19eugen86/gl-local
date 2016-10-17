@@ -1,0 +1,4 @@
+Name;Description
+{device_id};iOS IDFA
+{affiliate_id};Sub publisher
+{transaction_id};Session ID

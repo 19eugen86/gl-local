@@ -1,0 +1,8 @@
+Name;Description
+{idfa};iOS IDFA/ Google Advertising ID
+{hashed_pid};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{clickid};Click ID
+{user agent};URL encoded version of the HTTP user agent of the click
+{appid};Appsfire internal app ID
+{ip};IP Address
+{ccode};Country Code

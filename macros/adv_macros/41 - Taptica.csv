@@ -1,0 +1,8 @@
+Name;Description
+{tt_idfa};iOS IDFA (raw/ sha1/ md5)
+{tt_advertising_id};Google AID
+{aff_id};Sub publisher
+{tt_sub_aff};Publisher sub affiliate
+{tt_cid};Taptica click ID
+{tt_adv_id};Taptica advertiser ID
+{tt_country};Country Code

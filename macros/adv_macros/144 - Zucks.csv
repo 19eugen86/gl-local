@@ -1,0 +1,4 @@
+Name;Description
+%IDFA%;iOS IDFA/ Google Advertising ID
+%LAT%;"Limit Ad Tracking (If the 'Limit Ad Tracking' option is enabled, lat=1, otherwise, lat=0)"
+{suid};Unique session ID

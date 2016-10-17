@@ -1,0 +1,7 @@
+Name;Description
+$IDA;Apple ID for Advertisers. Example: 736C3D8E-6A4B-373E-718B-DE700561CFAD
+$GPID;Google Advertising ID
+$IMP_ID;Unique click ID - this may be used as a cachebuster, and may be returned to InMobi by third-party conversion trackers to report a conversion. This will be of a format like this: 83f47f85-3c3c-4beb-a42e-b608b97a2c40
+$IMP_TS;Numeric timestamp, not recorded in logs
+$BLINDED_SITE_ID;Sub publisher macro - This would be an unique id for the site on which the ad would be shown
+{InMobi_GPMID};Property ID (gpmid)

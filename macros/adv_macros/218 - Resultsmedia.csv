@@ -1,0 +1,9 @@
+Name;Description
+$CAD[device_ifa];iOS/Google Advertising ID
+${CREATIVE_ID};Creative
+${PUBLISHER_ID};Sub Publisher
+${CLICK_ID};Click ID
+${COUNTRY};Country code
+${IP};IP address
+${USER_AGENT_ENC};User agent
+${USER_LANGUAGE};Language

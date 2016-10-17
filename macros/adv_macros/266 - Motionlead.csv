@@ -1,0 +1,12 @@
+Name;Description
+{IFA};iOS IDFA/ Google Advertising ID
+{APPID};Sub publisher
+{CREATIVEID};Creative
+{EVENT};The event name
+{DISTINCTID};Transaction ID
+{CREATIVENAME};Creative name
+{CREATIVEVERSION};Creative version
+{APPADVERTISED};The name of the advertised app
+{OS};Device OS
+{TARGET};Tracking target
+{MP};Mixpanel integration

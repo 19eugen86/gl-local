@@ -1,0 +1,8 @@
+Name;Description
+%idfa%;iOS IDFA
+%gaid%;Android ID
+%pubid%;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+%iso2%;Country ISO Code
+%udid%;Device ID (iOS)
+%deviceid%;Device ID (Android)
+%tp_sid%;Click ID

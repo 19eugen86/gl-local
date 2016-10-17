@@ -1,0 +1,3 @@
+Name;Description
+${SUBID};internal click ID that we will pass at post back
+{zoneid};"Sub Publisher; ID of the site where the add was clicked"

@@ -1,0 +1,9 @@
+Name;Description
+%IDFA%;iOS IDFA
+%ANDROID_AD_ID%;Google Advertising ID
+%CAMPAIGN_ID%;CrossInstall's unique identifier for the campaign
+%COUNTRY_CODE%;Country Code
+%CROSSINSTALL_ID%;CrossInstall's unique identifier for the click
+%DEVICE_TYPE%;"The device type of the mobile device that clicked the campaign link. It will be either 'android', 'iphone', 'ipad', or 'ipod' (or it may be blank if the device type could not be properly identified)"
+%IP%;IP Address
+%PUBLISHER_ID%;A unique identifier for the publisher that sent in this click. May be used to track all of CrossInstall's traffic sources for the clicks and conversions on your campaigns

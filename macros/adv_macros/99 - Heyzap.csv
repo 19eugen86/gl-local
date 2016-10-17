@@ -1,0 +1,5 @@
+Name;Description
+{ANDROID_ADVERTISER_ID};Android Advertiser ID
+{IDFA};iOS Advertiser ID
+{PUBLISHER_ID};Publisher ID
+{IMPRESSION_ID};Click (to pass @ post back)

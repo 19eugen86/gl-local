@@ -1,0 +1,5 @@
+Name;Description
+{ios_ifa};The iOS Advertiser ID
+{google_aid} ;The Android Advertiser ID
+{sub1};Click id to be sent in post back
+{SUBID};Sub publisher

@@ -1,0 +1,7 @@
+Name;Description
+{identifier};A URL-encoded string which identifies an advertisement click on a unique device
+{google_aid};Device Google Advertising Id
+{google_ad_tracking};Google Advertising ID
+{said};A unique identifier of the app in which the advertisement appeared.
+{package_name};Android package name for the advertised app.
+{timestamp};Date and time of the click in ISO8601 datetime format. Example: 2013-02-22T16:01:23Z.

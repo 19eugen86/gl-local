@@ -1,0 +1,11 @@
+Name;Description
+[=IDFA=];iOS IDFA
+[=GAID=];Google Advertising ID
+[=SUBID=];the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+[=PUBLISHERID=];Publisher ID
+[=CREATIVEID=];Creative ID
+[=MOBTAG=];Click ID
+[=CAMPAIGNID=];Mobpartner campaign Name
+[=ACTIONID=];Action ID
+[=IP=];IP Address
+[=COUNTRY=];Country Code

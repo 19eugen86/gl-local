@@ -1,0 +1,6 @@
+Name;Description
+{ios_ifa};iOS AID
+{google_aid};Google AID
+{source};Sub Publisher
+{aff_sub};Site
+{transaction_id};Click ID to be passed in post back

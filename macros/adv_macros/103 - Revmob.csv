@@ -1,0 +1,6 @@
+Name;Description
+%{idfa};iOS IDFA
+%{identifier_for_advertising};Google Advertising ID
+%{app_id};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+%{impression_id};Impression ID
+%{campaign_id};Campaign ID

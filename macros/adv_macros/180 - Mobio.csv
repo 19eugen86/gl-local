@@ -1,0 +1,5 @@
+Name;Description
+{affiliate_id};Publisher ID
+{banner};Creative
+{offer_id};Offer (to pass @ post back)
+{transaction_id};Click (to pass @ post back)

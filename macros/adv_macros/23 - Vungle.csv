@@ -1,0 +1,15 @@
+Name;Description
+{{{ifa}}};iOS IDFA/ Windows Advertising ID/ Google Advertising ID (see note below)
+{{{aaid}}};Google Advertising ID
+{{{id}}};Vungle event identifier
+{{{app_id}}};Vungle application identifier
+{{{campaignId}}};Vungle campaign identifier
+{{{creative}}};Creative name
+{{{site_id}}};The ID of the app where the ad served
+{{{site_name}}};The name of the app where the ad served
+{{{country}}};Country Code
+{{{country_name}}};Country Name
+{{{country_adx}}};Other Identifier
+{{{device_ios}}};For iOS (iPhone, iPad etc.)
+{{{device_android}}};For Android (phone, tablet etc.)
+{{{timestamp}}};Timestamp

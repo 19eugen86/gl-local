@@ -1,0 +1,7 @@
+Name;Description
+{ios_ifa};iOS Advertiser ID
+{google_id};Google Advertiser ID
+{pub_id};Publisher ID
+{CLICK_ID};Click ID (to pass @ post back)
+{country_code};Country ISO code
+{IP};IP Address

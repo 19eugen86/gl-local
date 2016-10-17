@@ -1,0 +1,5 @@
+Name;Description
+{offer_id};Campaign title id (ex Asphalt 8, Despicable Me, Ice Age Village)
+{aff_id};Sub Publisher
+{transaction_id};Click ID
+{google_aid};Google advertising id

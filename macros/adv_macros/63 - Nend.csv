@@ -1,0 +1,5 @@
+Name;Description
+{{IDFA}};iOS IDFA (md5 hashed)
+{{GAIDMD5}};Google Advertising ID (md5 hashed)
+{{NENDID}};Nend click ID
+{{SPOTID}};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher

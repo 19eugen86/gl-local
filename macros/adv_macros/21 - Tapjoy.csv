@@ -1,0 +1,4 @@
+Name;Description
+TAPJOY_GENERIC_SOURCE;The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+TAPJOY_RESTORED_RAW_ADVERTISING_ID;Raw, unhashed IDFA/ Google Advertising ID
+[ip_address];IP address

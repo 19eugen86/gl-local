@@ -1,0 +1,7 @@
+Name;Description
+{ios_ifa};iOS IDFA
+{android_id};Google Advertising ID
+{affiliate_id};Sub publisher
+{aff_sub};Sub-sub publisher
+{source};Creative
+{transaction_id};Transaction ID

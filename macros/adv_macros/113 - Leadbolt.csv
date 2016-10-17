@@ -1,0 +1,6 @@
+Name;Description
+[DEVICE_AD_ID];Google Advertising ID / iOS IDFA
+[SITE_ID];the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+[CLK_ID];Click ID
+[TRACK_ID];Track ID
+[IP];IP Address

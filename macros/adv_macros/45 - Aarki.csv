@@ -1,0 +1,5 @@
+Name;Description
+{advertising_id};iOS IDFA/ Google Advertising ID
+{app_id};Unique identifier for each campaign in Aarkis platform
+{click_id};Unique identifier per click event
+{pub_id};Sub publisher

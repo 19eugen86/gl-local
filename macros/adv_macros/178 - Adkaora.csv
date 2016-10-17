@@ -1,0 +1,5 @@
+Name;Description
+{ios_ifa};iOS Advertising ID
+{google_aid};Google Advertising ID
+{ref_id};Click ID
+{sub_campaign};Internal campaign ID

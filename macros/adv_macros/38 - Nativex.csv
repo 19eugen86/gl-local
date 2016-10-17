@@ -1,0 +1,11 @@
+Name;Description
+#iOSIdFA#;The iOS Advertiser ID
+#AndroidIDFA#;Google's user specific, unique, resettable ID for advertising
+#PublisherAppId#;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+#OsVersion#;The device's operating system version, e.g. iOS 7.0.1.
+#DeviceType#;The hardware on which the user is viewing the ad. Examples include iPad, iPhone, Nexus 7, etc.
+#PlatformType#;The platform type, either iOS or Android
+#ClientIp#;The IP address of the device (not the server making the calls)
+#CountryCode#;A two letter country code in ISO 3166
+#UnixTimeStampInSec#;The Unix timestamp of the event
+#Nonce#;A number only used to identify this specific conversion

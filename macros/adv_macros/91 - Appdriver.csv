@@ -1,0 +1,3 @@
+Name;Description
+{identifier};Click ID
+{sub_publisher};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher

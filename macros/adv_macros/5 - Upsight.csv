@@ -1,0 +1,13 @@
+Name;Description
+${ifa};"Identifier. iOS Identifier for Advertising (iOS 6+); Google Advertiser Identifier (GAID). String. Example: 67117c98-b534-4a4b-bc23-1418741984a5"
+${odin};Identifier. Open Device Identifier Number (ODIN). String. Example: 82a53f1222f8781a5063a773231d4a7ee41bdd6f
+${mac};Identifier. The unique MAC address of the wifi hardware. String. Example: 56e5f5c0a08a
+${click_time};Click time as recorded in unix time which is time in seconds. Integer. Example: 1372101648
+${game_id};The PlayHaven specific game ID. Integer. Example: 1234
+${country};Country is the 3 letter ISO. String. Example: USA
+${os};OS is the raw OS string from the device. String. Example: iPhone+OS+6.0.2
+${language};2 character code that follows the ISO 639-1 standard. String. Example: en
+${hardware};The raw hardware string associated with the device. String. Example: iPhone5,2 SGH-T999
+${campaign_id};The specific campaign ID associated with this advertising campaign. Integer. Example: 1234
+${creative_id};The creative ID is the Playhaven specific ID associated with the creative displayed to the user that was clicked on. Integer. Example: 1234
+${install_time};For conversions: timestamp of first launch. For Click Tracking, it will be 0 (zero). Integer. Example: 1372101648

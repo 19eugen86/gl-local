@@ -1,0 +1,5 @@
+Name;Description
+%eudid!;IDFA/ SHA1 Hashed Android ID/ Android Advertising ID
+%ecid!;The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+%%CACHEBUSTER%%;Cache Buster (generates a random number)
+%eaid!;Ad Group ID

@@ -1,0 +1,6 @@
+Name;Description
+{IDFA};iOS IDFA
+{ADID};Google Ad ID
+{PUB_ID};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{CC};Country Code
+{CUSTOM_PARAMETER};Click ID

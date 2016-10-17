@@ -1,0 +1,5 @@
+Name;Description
+${idfa};iOS IDFA
+${adid};Google Advertising ID
+${ad_code};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+${country};Country Code

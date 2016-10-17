@@ -1,0 +1,5 @@
+Name;Description
+{iQUclickidhere};"Iqu internal click ID; to be passed at post back"
+{iQUofferidhere};"Iqu internal offer ID; to be passed at post back"
+{subID};Sub publisher
+{ip};IP Address

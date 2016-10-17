@@ -1,0 +1,4 @@
+Name;Description
+{idfa};iOS Advertising ID
+{android_id};Google Advertising ID
+{uid};Clickky's unique click ID for each click Mandatory

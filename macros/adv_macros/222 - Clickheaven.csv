@@ -1,0 +1,5 @@
+Name;Description
+{offer_file_id};Creative
+{affiliate_id};Sub Publisher
+{source};publisher source
+{transaction_id};click id (to be passed in post back)

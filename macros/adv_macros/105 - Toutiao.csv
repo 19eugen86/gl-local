@@ -1,0 +1,6 @@
+Name;Description
+{IDFA};iOS Advertiser ID
+{IP};IP address
+{sub_publisher};Publisher ID
+{country_code};"Non-standard country ISO code; hardcoded in the tracking URL as 0086"
+{callback_param};Click (to pass @ post back)

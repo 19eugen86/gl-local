@@ -1,0 +1,11 @@
+Name;Description
+{acquisition_identifier};Acquisition ID - mNectar's identifier for the ad being installed
+{ios_ifa};"iOS Identifier for Advertisers aka 'iOS IDFA'"
+{android_ifa};Android Advertising Identifier - Google's Play Store ID for Advertisers
+{android_id_sha1};Android ID - SHA1 of Android ID
+{remote_ip_address};Remote IP Address
+{conversion_timestamp};Conversion timestamp
+{click_id};mNectar's unique click identifier
+{ad_id};Unique id for each creative line item in mNectar's system
+{ad_unit_id};mNectar's anonymous content id
+{publisher_id};mNectar's anonymous publisher id

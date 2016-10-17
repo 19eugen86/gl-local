@@ -1,0 +1,6 @@
+Name;Description
+{idfa};iOS IDFA
+{gaid};Google Advertising ID
+{sub_publisher};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{user_id};User ID
+{content_id};Content ID

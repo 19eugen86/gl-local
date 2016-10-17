@@ -1,0 +1,4 @@
+Name;Description
+%S2SID%;Transaction ID
+%POOLID%;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+%COUNTRYID%;Country ID

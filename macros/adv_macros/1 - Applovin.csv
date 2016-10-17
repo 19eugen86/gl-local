@@ -1,0 +1,7 @@
+Name;Description
+{PUB_ID};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{IDFA};Google Advertising ID / iOS IDFA/ Android ID (only for Amazon, and it is lowercased, then sha1 hashed)
+{DID};Click ID
+{CAMPAIGN_NAME};Campaign Name
+{IP};IP Address
+{CC};Country Code

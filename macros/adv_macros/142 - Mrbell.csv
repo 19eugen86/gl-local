@@ -1,0 +1,6 @@
+Name;Description
+{advertising_id};Android Advertiser ID
+{ifa};iOS Advertiser ID
+{clickid};Click id to send in post back
+{ad_id};Creative
+{publisher_id};Publisher ID

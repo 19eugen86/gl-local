@@ -1,0 +1,3 @@
+Name;Description
+[LR_IDFA];iOS IDFA/ Google Advertising ID
+[LR_IDFA_FLAG];Boolean value, where 0 means that tracking is not enabled and 1 means that tracking is enabled

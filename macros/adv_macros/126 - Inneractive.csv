@@ -1,0 +1,7 @@
+Name;Description
+{transaction_id};ID of the transaction for network. Don't get confused with an ID an affiliate passes into aff_sub
+{affiliate_id};Publisher ID
+{offer_id};ID of offer
+{aff_sub2};Site ID
+{country_code};Two-letter ISO country code of user (ex. US)
+{ip};IP address that made the conversion request

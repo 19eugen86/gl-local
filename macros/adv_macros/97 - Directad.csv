@@ -1,0 +1,5 @@
+Name;Description
+{ex_token};A URL-encoded string which identifies an advertisement click on a unique device
+{google_aid};Device Google Advertising Id
+{google_ad_tracking};Google Advertising ID
+{media_id};The Publisher Id of the source media

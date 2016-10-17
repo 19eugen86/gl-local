@@ -1,0 +1,6 @@
+Name;Description
+{ios_ifa};iOS IDFA
+{google_aid};Google Advertising ID
+{transaction_id};Click ID
+{publisher_id};Sub publisher
+{file_name};Creative

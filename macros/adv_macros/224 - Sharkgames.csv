@@ -1,0 +1,4 @@
+Name;Description
+{ios_ifa};iOS IDFA
+{affiliate_id};Sub publisher
+{transaction_id};Click ID

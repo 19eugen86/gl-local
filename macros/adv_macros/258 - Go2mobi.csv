@@ -1,0 +1,8 @@
+Name;Description
+{uid_deviceid};Google Advertising ID / iOS IDFA
+{campaign};Go2mobi campaign id
+{pln};Placement name
+{plid};Placement ID
+{crid};Creative ID
+{country};Country
+{clickid};Click ID

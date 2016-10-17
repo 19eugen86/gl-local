@@ -1,0 +1,4 @@
+Name;Description
+{google_aid};Google Advertising ID
+{aff_sub5};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{transaction_id};Pinsight ID

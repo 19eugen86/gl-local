@@ -1,0 +1,6 @@
+Name;Description
+{idfa};iOS IDFA
+{gps_adid};Google Advertising ID
+{aff_sub2};Sub publisher
+{aff_sub4};Creative
+{transaction_id};Transaction ID

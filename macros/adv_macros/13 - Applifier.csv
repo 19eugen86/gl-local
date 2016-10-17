@@ -1,0 +1,6 @@
+Name;Description
+{ifa};iOS IDFA/ Google Advertising ID
+{source_game_id};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{game_id};the Applifier game ID
+{country_code};the 2 letter country code
+{creative_pack};Creative

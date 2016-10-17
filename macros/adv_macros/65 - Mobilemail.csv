@@ -1,0 +1,6 @@
+Name;Description
+idfa;RAW or SHA or MD5 iOS IDFA
+gaid;RAW or SHA or MD5 Google Advertising ID
+sub_publisher;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+rid;Mobilemail click ID
+sid;Mobilemail Site ID (a campaign code on the advertiser's dashboard)

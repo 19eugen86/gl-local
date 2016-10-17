@@ -1,0 +1,5 @@
+Name;Description
+{ios_ifa};iOS IDFA
+{google_advertising_id};Google Advertising ID
+{affiliate_id};Sub publisher
+{transaction};Click ID

@@ -1,0 +1,6 @@
+Name;Description
+[AAID];Google Advertising ID
+[ClickID];Click ID
+[countryCode];Country Code
+[IDFA];iOS IDFA
+[SITE_ID];the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher

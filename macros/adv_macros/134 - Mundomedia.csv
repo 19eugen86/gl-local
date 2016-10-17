@@ -1,0 +1,3 @@
+Name;Description
+%COOKIEID;internal click ID to be passed at post back
+%HASH_CODE;campaign depending param to be passed at post back

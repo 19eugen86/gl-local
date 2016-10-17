@@ -1,0 +1,6 @@
+Name;Description
+{transaction_id};Click ID
+{ios_ifa};iOS IDFA
+{android_id};Android ID/ Google Advertising ID
+{affiliate_id};The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{source};Sub ID

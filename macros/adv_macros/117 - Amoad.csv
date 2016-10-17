@@ -1,0 +1,5 @@
+Name;Description
+${IDFA_RAW};iOS IDFA
+${ADCLOUD_USERINFO};User info
+${ADCLOUD_CLICKINFO};Click info
+${ADSLOT_ID};Publisher ID

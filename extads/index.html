@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GAAP Campaigns</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/css/bootstrap-select.min.css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/navbar-fixed-top.css" rel="stylesheet">
+
+    <!-- Include Date Range Picker -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/loading.css" rel="stylesheet">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.11.2/js/bootstrap-select.min.js"></script>
+
+    <!-- Include Date Range Picker -->
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('[data-toggle="popover"]').popover({
+                trigger: "hover"
+            });
+        });
+
+        var getCampaignData = function(id, start, end) {
+            $('#campaign-loading-'+id).fadeIn("slow", function() {
+                $.post("data.php", {
+                    id: id,
+                    start: start.format('YYYY-MM-DD'),
+                    end: end.format('YYYY-MM-DD')
+                }).done(function(data) {
+                    alert('success');
+                    console.log(data);
+                }).fail(function(result) {
+                    alert("Error: No valid data returned from the server!");
+                    console.log(result);
+                }).always(function() {
+                    $('#campaign-loading-'+id).delay(1000).fadeOut("slow");
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fullwidth">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="padding: 3px 10px;" href="">
+                    <img alt="Gameloft" src="img/logo.png">
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <form class="navbar-form navbar-left" id="search-campaigns" method="post" action="data.php">
+                    <div class="form-group">
+                        <select id="advertiser" class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-width="200px" title="Advertiser">
+                            <option value="7">Adcolony</option>
+                            <option value="1">Applovin</option>
+                            <option value="70">Chartboost</option>
+                            <option value="236">Facebook</option>
+                            <option value="81">Google</option>
+                            <option value="264">Twitter</option>
+                            <option value="23">Vungle</option>
+                            <option value="260">Youtube</option>
+                            <option value="270">Ytsponsorship</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="game" class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-width="200px" title="Game" disabled>
+                            <option value="30">Asphalt 8 Airborne</option>
+                            <option value="22">Brothers in Arms 3: Sons of War</option>
+                            <option value="48">Despicable Me: Minion Rush</option>
+                            <option value="70">Disney Kingdom</option>
+                            <option value="26">Dragon Mania Legends</option>
+                            <option value="34">Dungeon Hunter 5</option>
+                            <option value="50">March of Empires</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="os" class="selectpicker" multiple data-actions-box="true" data-width="150px" title="OS" disabled>
+                            <option value="ios">iOS</option>
+                            <option value="android">Android</option>
+                            <option value="windows8">Windows 8</option>
+                            <option value="windows_phone8">Windows Phone 8</option>
+                            <option value="amazon">Amazon</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select id="country" class="selectpicker" multiple data-live-search="true" data-actions-box="true" data-width="200px" title="Country" disabled>
+                            <option value="France">France</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United States">United States</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                        </select>
+                    </div>
+                    <button type="submit" id="campaigns-search-btn" class="btn btn-success" disabled>Search</button>
+                </form>
+                <form class="navbar-form navbar-right" id="search-by-id-form" method="post" action="data.php">
+                    <div class="form-group">
+                        <input type="text" id="search-by-id-input" name="search-by-id" class="form-control" placeholder="Find by ID...">
+                    </div>
+                </form>
+                <script>
+                    $('#advertiser').on('changed.bs.select', function () {
+                        var advSelected = $('#advertiser').selectpicker('val');
+                        var isDisabled;
+
+                        if (advSelected === null) {
+                            isDisabled = true;
+
+                            $('#game').selectpicker('val', '');
+                            $('#os').selectpicker('val', '');
+                            $('#country').selectpicker('val', '');
+                        } else {
+                            isDisabled = false;
+                        }
+
+                        $('#game').prop('disabled', isDisabled);
+                        $('#game').selectpicker('refresh');
+
+                        $('#os').prop('disabled', isDisabled);
+                        $('#os').selectpicker('refresh');
+
+                        $('#country').prop('disabled', isDisabled);
+                        $('#country').selectpicker('refresh');
+
+                        $('#campaigns-search-btn').prop('disabled', isDisabled);
+                    });
+
+                    $('#campaigns-search-btn').click(function() {
+                        $("#search-campaigns").submit( function(event) {
+                            var advertiser = $('#advertiser').selectpicker('val');
+                            for (var i = 0; i < advertiser.length; i++) {
+                                $('<input />').attr('type', 'hidden').attr('name', "advertiser[]").attr('value', advertiser[i]).appendTo('#search-campaigns');
+                            }
+
+                            var game = $('#game').selectpicker('val');
+                            for (var i = 0; i < game.length; i++) {
+                                $('<input />').attr('type', 'hidden').attr('name', "game[]").attr('value', game[i]).appendTo('#search-campaigns');
+                            }
+
+                            var os = $('#os').selectpicker('val');
+                            for (var i = 0; i < os.length; i++) {
+                                $('<input />').attr('type', 'hidden').attr('name', "os[]").attr('value', os[i]).appendTo('#search-campaigns');
+                            }
+
+                            var country = $('#country').selectpicker('val');
+                            for (var i = 0; i < country.length; i++) {
+                                $('<input />').attr('type', 'hidden').attr('name', "country[]").attr('value', country[i]).appendTo('#search-campaigns');
+                            }
+                            return true;
+                        });
+                    });
+
+                    $("#search-by-id-input").keypress(function(event) {
+                        // Submit form by press Enter key
+                        if (event.which == 13) {
+                            event.preventDefault();
+                            $("#search-by-id-form").submit();
+                        }
+                    });
+                </script>
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="col-md-1">#</th>
+                    <th class="col-md-6">Campaign Name</th>
+                    <th class="col-md-2">OS</th>
+                    <th class="col-md-2">Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">5144</th>
+                    <td>
+                        <a data-toggle="collapse" href="#campaign-header-5144" aria-expanded="false" aria-controls="campaign-header-5144">
+                            Adcolony - Dragon Mania Legends campaign - Saudi Arabia - Android
+                        </a>
+                    </td>
+                    <td>Android</td>
+                    <td>Saudi Arabia</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="collapse" id="campaign-header-5144">
+                            <div class="well row">
+                                <div class="col-xs-6">
+                                    <fieldset>
+                                        <legend>Settings</legend>
+                                        <ul>
+                                            <li>Impressions: Enabled</li>
+                                            <li>Fingerprinting: Enabled</li>
+                                            <li>Post Install: Enabled</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-6">
+                                    <section id="campaign-loading-5144">
+                                        <div class="overlay">
+                                            <i class="fa fa-spinner fa-spin spin-normal"></i>
+                                        </div>
+                                    </section>
+                                    <fieldset style="padding: 0 7px;">
+                                        <legend>Info</legend>
+                                        <div class="row col-md-6 pull-right">
+                                            <div class="date-range-picker">
+                                                <input id="campaign-date-range-picker-5144" class="input-mini form-control active" type="text">
+                                                <i class="fa fa-calendar glyphicon glyphicon-calendar" data-placement="top" data-toggle="popover" data-container="body" data-original-title="" title="" data-content="You can get conversions info for date range selected."></i>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $('#campaign-date-range-picker-5144').daterangepicker({}, function(start, end) {
+                                                getCampaignData(5144, start, end);
+                                            });
+                                        </script>
+                                        <ul class="col-md-6">
+                                            <li>Clicks: 123</li>
+                                            <li>Impressions: 123</li>
+                                            <li>Conversions: 456</li>
+                                            <li>Rate: 20%</li>
+                                            <li>CTR: 20%</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-12">
+                                    <fieldset>
+                                        <legend>Tracking URL(s)</legend>
+                                        https://extads.gameloft.com/adcolony/click.php?gcampaign_id=5144&gproduct_id=2116&gos=android&google_ad_id=[GOOGLE_AD_ID]&country_code=[COUNTRY_CODE]&ip_address=[IP_ADDRESS]&app_id=[APP_ID]&Creative=[RAW_AD_CREATIVE_ID]&Creative_n=[AD_CREATIVE_NAME]
+                                        <br><br>
+                                        https://extads.gameloft.com/adcolony/impression.php?gcampaign_id=5144&gproduct_id=2116&gos=android&google_ad_id=[GOOGLE_AD_ID]&country_code=[COUNTRY_CODE]&ip_address=[IP_ADDRESS]&app_id=[APP_ID]&Creative=[RAW_AD_CREATIVE_ID]&Creative_n=[AD_CREATIVE_NAME]
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5148</th>
+                    <td>
+                        <a data-toggle="collapse" href="#campaign-header-5148" aria-expanded="false" aria-controls="campaign-header-5148">
+                            Vungle - Dungeon Hunter 5 campaign - Spain - iOS
+                        </a>
+                    </td>
+                    <td>iOS</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="collapse" id="campaign-header-5148">
+                            <div class="well row">
+                                <div class="col-xs-6">
+                                    <fieldset>
+                                        <legend>Settings</legend>
+                                        <ul>
+                                            <li>Impressions: Enabled</li>
+                                            <li>Fingerprinting: Enabled</li>
+                                            <li>Post Install: Enabled</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-6">
+                                    <section id="campaign-loading-5148">
+                                        <div class="overlay">
+                                            <i class="fa fa-spinner fa-spin spin-normal"></i>
+                                        </div>
+                                    </section>
+                                    <fieldset>
+                                        <legend>Info</legend>
+                                        <div class="row col-md-6 pull-right">
+                                            <div class="date-range-picker">
+                                                <input id="campaign-date-range-picker-5148" class="input-mini form-control active" type="text">
+                                                <i class="fa fa-calendar glyphicon glyphicon-calendar" data-placement="top" data-toggle="popover" data-container="body" data-original-title="" title="" data-content="You can get conversions info for date range selected."></i>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $('#campaign-date-range-picker-5148').daterangepicker({}, function(start, end) {
+                                                getCampaignData(5148, start, end);
+                                            });
+                                        </script>
+                                        <ul>
+                                            <li>Clicks: 123</li>
+                                            <li>Impressions: 123</li>
+                                            <li>Conversions: 456</li>
+                                            <li>Rate: 20%</li>
+                                            <li>CTR: 20%</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-12">
+                                    <fieldset>
+                                        <legend>Tracking URL(s)</legend>
+                                        http://extads.gameloft.com/vungle/click.php?gcampaign_id=5148&gproduct_id=XXXX&gos=ios&ifa={{{ifa}}}&id={{{id}}}&app_id={{{app_id}}}&campaign_id={{{campaignId}}}&creative_n={{{creative}}}&siteid={{{site_id}}}&site_name={{{site_name}}}&country={{{country}}}&country_name={{{country_name}}}&country_adx={{{country_adx}}}&device_ios={{{device_ios}}}&timestamp={{{timestamp}}}
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">5258</th>
+                    <td>
+                        <a data-toggle="collapse" href="#campaign-header-5258" aria-expanded="false" aria-controls="campaign-header-5258">
+                            Chartboost - March of Empires campaign - iOS
+                        </a>
+                    </td>
+                    <td>iOS</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <div class="collapse" id="campaign-header-5258">
+                            <div class="well row">
+                                <div class="col-xs-6">
+                                    <fieldset>
+                                        <legend>Settings</legend>
+                                        <ul>
+                                            <li>Impressions: Enabled</li>
+                                            <li>Fingerprinting: Enabled</li>
+                                            <li>Post Install: Enabled</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-6">
+                                    <section id="campaign-loading-5258">
+                                        <div class="overlay">
+                                            <i class="fa fa-spinner fa-spin spin-normal"></i>
+                                        </div>
+                                    </section>
+                                    <fieldset>
+                                        <legend>Info</legend>
+                                        <div class="row col-md-6 pull-right">
+                                            <div class="date-range-picker">
+                                                <input id="campaign-date-range-picker-5258" class="input-mini form-control active" type="text">
+                                                <i class="fa fa-calendar glyphicon glyphicon-calendar" data-placement="top" data-toggle="popover" data-container="body" data-original-title="" title="" data-content="You can get conversions info for date range selected."></i>
+                                            </div>
+                                        </div>
+                                        <script type="text/javascript">
+                                            $('#campaign-date-range-picker-5258').daterangepicker({}, function(start, end) {
+                                                getCampaignData(5258, start, end);
+                                            });
+                                        </script>
+                                        <ul>
+                                            <li>Clicks: 123</li>
+                                            <li>Impressions: 123</li>
+                                            <li>Conversions: 456</li>
+                                            <li>Rate: 20%</li>
+                                            <li>CTR: 20%</li>
+                                        </ul>
+                                    </fieldset>
+                                </div>
+                                <div class="col-xs-12">
+                                    <fieldset>
+                                        <legend>Tracking URL(s)</legend>
+                                        The tracking URLs should be configured in the Chartboost dashboard, in the "Callbacks" section, with gcampaign_id, gproduct_id and gos as static parameters, while the other macros should be set as dynamic parameters.
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div> <!-- /container -->
+</body>
+</html>

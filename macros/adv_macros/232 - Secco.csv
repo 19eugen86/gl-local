@@ -1,0 +1,6 @@
+Name;Description
+[=idfa=];iOS IDFA
+[=gaid=];Google Advertising ID
+[=AFID=];The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+[=SID=];Creative
+[=ClickID=];Click ID

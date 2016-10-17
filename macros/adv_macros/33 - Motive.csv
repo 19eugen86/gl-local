@@ -1,0 +1,6 @@
+Name;Description
+#s5#;Device Identifier (iOS IDFA / Google AID)
+#affid#;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+#oid#;Motive campaign ID
+#reqid#;Click ID
+#ip#;IP Address

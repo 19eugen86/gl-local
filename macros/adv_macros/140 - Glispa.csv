@@ -1,0 +1,6 @@
+Name;Description
+{idfa};iOS IDFA
+{gaid};Google Advertising ID
+{clickid};Click ID
+{placementID};Placement ID
+{refid};Sub publisher

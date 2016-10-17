@@ -1,0 +1,8 @@
+Name;Description
+{user_id};iOS IDFA
+{startapp_advertising_id};Google Advertising ID
+{startapp_app_id};The App ID of the publishing app from which every click came
+{startapp_dev_id};The Publisher ID of the publishing app from which every click came
+{creative_id};Creative ID
+{startapp_country};Country
+{startapp_click_id_placeholder};Click ID

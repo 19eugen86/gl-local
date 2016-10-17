@@ -1,0 +1,5 @@
+Name;Description
+{device_id};iOS/Google Advertising ID
+{ad_delivery_token};Unique ID assigned to the ad creative file and click. To be sent in post back.
+{app_key};Sub publisher
+{creative_token};Creative

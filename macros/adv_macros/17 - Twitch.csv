@@ -1,0 +1,4 @@
+Name;Description
+%%PATTERN:idfa%%;iOS IDFA
+%%PATTERN:adid%%;Google Advertising Id
+%%PATTERN:game%%;The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher

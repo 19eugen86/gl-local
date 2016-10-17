@@ -1,0 +1,5 @@
+Name;Description
+{ios_ifa};iOS Identifier for Advertising
+{google_aid};Google AID
+{clickid};ClickId to ba passed in post back
+{aff_id_cm};The ID of the publisher.

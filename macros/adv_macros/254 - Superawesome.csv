@@ -1,0 +1,7 @@
+Name;Description
+{adid};Google Advertising ID
+{idfa};iOS Advertising ID
+{targetingId};Sub publisher
+{network};Optional, always populated with pub network name.
+{platform};"Optional, one of the following: 'ANDROID', 'IPHONE', 'IPAD'."
+{appId};Optional, unique advertiser application ID.

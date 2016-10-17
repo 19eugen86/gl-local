@@ -1,0 +1,7 @@
+Name;Description
+{DeviceIds[IFA]};iOS IDFA
+{DeviceIds[AID]};Google Advertising Id
+{CC};Country Code
+{IP};IP Address
+{DynamicParameter};Click Id
+{ApplicationId};"Sub publisher; The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher"

@@ -1,0 +1,4 @@
+Name;Description
+{idfa};iOS IDFA/ Google Advertising ID (md5 hashed)
+{_site};the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+{xuid}_advertiser ID;Session ID

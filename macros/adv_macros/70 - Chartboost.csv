@@ -1,0 +1,10 @@
+Name;Description
+ifa;iOS IDFA
+gaid;Google Ad ID
+uuid;Android ID (Amazon only)
+country;Country Code
+sup_pub;The ID of the app/ source where the ad is served
+pub_app;The name of the app/ source where the ad is served
+sub_campaign;The name of the campaign
+creative_id;Creative ID
+creative_name;Creative name

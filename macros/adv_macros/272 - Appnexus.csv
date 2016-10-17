@@ -1,0 +1,6 @@
+Name;Description
+${DEVICE_APPLE_IDA};iOS IDFA
+${DEVICE_AAID};Google Advertising ID
+${DEVICE_WIN_ID};Windows Advertising ID
+${EXT_APP_ID};Sub publisher
+${SSP_DATA};SSP data

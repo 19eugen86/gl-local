@@ -1,0 +1,8 @@
+Name;Description
+[IDFA];iOS Identifier for Advertising (iOS 6+)
+[GOOGLE_AD_ID];Google AID
+[COUNTRY_CODE];Country ISO code
+[IP_ADDRESS];IP Address
+[APP_ID];The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+[RAW_AD_CREATIVE_ID];Creative ID
+[AD_CREATIVE_NAME];Creative name

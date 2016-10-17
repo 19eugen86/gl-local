@@ -1,0 +1,6 @@
+Name;Description
+[ios_ifa];iOS IDFA
+[google_aid];Google Advertising ID
+[zone];the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+[clickid];Click ID
+[country];Country Code

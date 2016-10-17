@@ -1,0 +1,5 @@
+Name;Description
+%(UDID)s;IDFA/ Google Ad ID
+%(PUB_ID)s;The ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+%(IP)s;IP Address
+%(CLICK_ID)s;Click ID from Swelen

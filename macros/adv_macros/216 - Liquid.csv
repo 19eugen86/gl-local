@@ -1,0 +1,6 @@
+Name;Description
+{IDFA};iOS Advertising ID
+{ANDROID_AID};Google Advertising ID
+{OFFER};Offer name
+{CAMPAIGNID};Placement/Source ID
+{SID};Conversion value

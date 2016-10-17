@@ -1,0 +1,5 @@
+Name;Description
+{adid};Google Advertising ID
+{idfa};iOS Advertiser ID
+{data};Click id to send in post back
+{targetingId};Publisher ID

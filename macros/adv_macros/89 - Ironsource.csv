@@ -1,0 +1,7 @@
+Name;Description
+$ANDROID_ID$;Google Advertising ID / iOS IDFA
+$SUBSUBID$;the ID of the publisher where the ad served, if the advertiser wants to do quality adjustments by publisher
+$ADID$;Click ID
+$SUBID$;traffic segment ID
+$ACTION$;Action (for instance, I stands for Install)
+$CPI$;CPI

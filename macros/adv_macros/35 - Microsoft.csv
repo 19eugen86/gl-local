@@ -1,0 +1,15 @@
+Name;Description;Type
+{G.QUERY.ADID};"adid = The advertising ID ('in the clear'), a 32 char GUID";Click
+{G.QUERY.MKT};mkt = Internal MS data, a 6 char string (to be sent on the post-back);Click
+{G.QUERY.ASID};"bclid = Click ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Click
+{G.QUERY.SAPPID};"sappid = Creative; Internal MS data, a 32 char GUID (to be sent on the post-back)";Click
+{G.QUERY.PG};"pg = Sub publisher (site/ app ID); Internal MS data, a 20 char string (to be sent on the post-back)";Click
+{G.QUERY.PID};"pid = Campaign ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Click
+{G.QUERY.CID};"cid = Ad creative ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Click
+##(Profile.ADID{})##;"adid = The advertising ID ('in the clear'), a 32 char GUID";Impression
+##?Response(RID).Creative(CID).MARKET{}?##;mkt = Internal MS data, a 6 char string (to be sent on the post-back);Impression
+##(Request(RID).ASID)##;"bclid = Impression ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Impression
+##(Global.PN{})##;"sappid = Creative; Internal MS data, a 32 char GUID (to be sent on the post-back)";Impression
+##(Request(RID).PG{})##;"pg = Sub publisher (site/ app ID); Internal MS data, a 20 char string (to be sent on the post-back)";Impression
+##?Response(RID).Creative(CID).PID?##;"pid = Campaign ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Impression
+##?Response(RID).Creative(CID).CID?##;"cid = Ad creative ID; Internal MS data, a 32 char GUID (to be sent on the post-back)";Impression
