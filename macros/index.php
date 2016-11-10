@@ -44,8 +44,10 @@ foreach ($advMacrosList as $advMacros) {
                     $event = '"'.strtolower($data[2]).'"';
                 }
 
+                preg_match('/[a-zA-Z0-9_]+/', $data[0], $matches);
                 $macros[$advId][] = [
-                    'name'          => $data[0],
+                    'name'          => strtolower($matches[0]),
+                    'macro'         => $data[0],
                     'event'         => $event,
                     'description'   => $data[1],
                 ];
@@ -70,7 +72,7 @@ foreach ($macros as $advId => $advMacros) {
     foreach ($advMacros as $macro) {
         $macrosToInsert[] = $macro['name'];
         $advMacrosToInsert[$advId][] = $macro['name'];
-        $queries[] = 'INSERT INTO `advertiser_macros`(`advertiser_id`, `name`, `event`, `description`, `status_id`) VALUES ('.$advId.',"'.$macro['name'].'",'.$macro['event'].',"'.$macro['description'].'",1)';
+        $queries[] = 'INSERT INTO `advertiser_macros`(`advertiser_id`, `name`, `macro`, `event`, `description`, `status_id`) VALUES ('.$advId.',"'.$macro['name'].'","'.$macro['macro'].'",'.$macro['event'].',"'.$macro['description'].'",1)';
     }
 }
 
