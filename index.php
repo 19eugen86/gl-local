@@ -16,8 +16,12 @@
 //echo "<pre>";
 //var_dump($params);
 
-//$date = new \DateTime('-30 minute');
-//$startDate = $date->format('H:i');
+$date = new \DateTime('2016-11-28');
+//$startDate = strtotime($date->format('Y-m-d 00:00:00'));
+
+var_dump($date->format('Y-m-d 00:00:00'));
+die;
+
 //
 //$date = new \DateTime();
 //$endDate = $date->format('H:i');
