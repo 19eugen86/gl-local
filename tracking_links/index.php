@@ -41,7 +41,7 @@ foreach ($productBuilds as $build) {
 }
 
 // Campaigns
-$campaigns = mysqli_fetch_all(mysqli_query($connection, 'SELECT * FROM campaigns WHERE 1'), MYSQLI_ASSOC);
+$campaigns = mysqli_fetch_all(mysqli_query($connection, 'SELECT * FROM campaigns WHERE name LIKE "UC-%"'), MYSQLI_ASSOC);
 
 foreach ($campaigns as $campaign) {
     foreach ($platformBuilds as $os => $builds) {
