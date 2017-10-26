@@ -13,9 +13,9 @@ if ($_POST['ids']) {
     }
 
     $str = implode(',', $ids);
-    echo substr($str, 0, strlen($str)-1);
+    echo $str;
 }
 
 ?>
 
-<a href="index.html">Back</a>
+<br/><br/><a href="index.html">Back</a>
