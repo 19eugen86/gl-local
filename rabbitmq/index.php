@@ -8,6 +8,7 @@
 set_time_limit(0);
 
 $url = 'http://extads-staging.gameloft.org/kixer/impression.php?gcampaign_id=6210&gproduct_id=2208&gos=ios&tracking_id=TRACKING_ID&sub_id=SUBID&ip_address=IP_ADDRESS&lang=LANGUAGE&ua=USER_AGENT';
+//$url = 'http://extads.gameloft.com/futurestream/impression.php?gcampaign_id=408&gproduct_id=1897&gos=ios&idfa=0EDFA043-6D64-4D13-BCC0-48BB354CE957&country=${country}&ad_code=${ad_code}&extads_test=1';
 
 $tsStart = microtime(true);
 
