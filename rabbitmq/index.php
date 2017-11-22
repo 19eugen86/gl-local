@@ -15,7 +15,7 @@ $url = "http://extads-staging.gameloft.org/kixer/impression.php?gcampaign_id=621
 
 $tsStart = microtime(true);
 
-for ($i = 0; $i < 1000; $i++) {
+for ($i = 0; $i < 2500; $i++) {
     $tsLoopStart = microtime(true);
 
     // create a new cURL resource
